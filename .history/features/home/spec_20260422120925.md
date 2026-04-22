@@ -1,0 +1,25 @@
+# Feature: Home Page
+
+## Goal
+
+index.html and index.css pages that contains all the code for a functioning home page.
+implement `index.html`
+
+## Designs
+
+![target layout](../../assets/20260420_135436.jpg)
+
+## Work
+
+- Describe the UI/UX clearly and specifically
+- A Ui that has a clean and sharp design will will be implemented using flexbox for easy layout design
+- What elements exist? What container elements exist?
+- I will be using Sections, Divs, Img, Headers and more
+- How do users interact? What is the hover behavior?
+- I do plan on implementing some hover behaviors fo some improved user experience.
+
+## Deliverables
+
+- What does “done” look like?
+- Will be interactive with semantic elements such as sections, articles and more.
+- Be concrete and testable
