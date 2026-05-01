@@ -5,6 +5,7 @@
 
 body {
   font-family: "Orbitron-VariableFont_wght";
+  background-image: url(/assets/images/download\ \(7\).jpg);
 }
 nav ul {
   display: flex;

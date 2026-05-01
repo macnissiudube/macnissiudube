@@ -5,6 +5,7 @@
 
 body {
   font-family: "Orbitron-VariableFont_wght";
+  background-image: url(/assets/images/download\ \(7\).jpg);
 }
 nav ul {
   display: flex;
@@ -81,6 +82,13 @@ img {
 }
 
 .aboutH2 {
+  display: flex;
+  justify-content: flex-start;
+  text-align: end;
+  align-items: flex-end;
+}
+
+.aboutParagraph {
   display: flex;
   justify-content: flex-start;
   text-align: end;

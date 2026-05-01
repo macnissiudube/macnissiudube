@@ -5,6 +5,7 @@
 
 body {
   font-family: "Orbitron-VariableFont_wght";
+  background-image: url(/assets/images/download\ \(7\).jpg);
 }
 nav ul {
   display: flex;
@@ -21,31 +22,31 @@ header {
 }
 
 li {
-  margin: 2rem;
+  margin: 1rem;
   list-style: none;
+  lighting-color: red;
 }
 
 main {
   display: flex;
 }
 
-h1 {
+div {
   display: flex;
-  justify-content: center;
-  text-align: center;
-  flex: row;
+}
+h1 {
+  justify-content: flex-start;
+  text-align: flex-start;
 }
 
 h2 {
-  justify-content: center;
-  text-align: center;
+  justify-content: flex-start;
+  text-align: left;
 }
 
 img {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: flex-end;
 }
 .container {
   display: grid;
@@ -59,30 +60,8 @@ img {
   padding-bottom: 1 rem;
   flex-direction: row;
 }
-.imageSection {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .mainSection {
-  display: flex;
-  justify-content: space-between;
-  text-align: end;
-  align-items: flex-end;
-}
-.aboutSection {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.aboutH2 {
-  display: flex;
-  justify-content: flex-start;
-  text-align: end;
-  align-items: flex-end;
+    flex: row;
+    flex-direction
 }
