@@ -16,10 +16,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 40px;
-  background: rgba(13, 17, 23, 0.85);
-  backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 /* smol child container */
@@ -36,7 +32,7 @@ li {
 
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 /* MAIN LAYOUT ********************************************/
@@ -73,24 +69,7 @@ img {
   min-height: 80vh;
   width: 100vw;
   padding-bottom: 1 rem;
-  flex-direction: column;
-  padding-top: 72px;
-  background: var(--teal-grad);
-}
-
-.heroPlaceHolder {
-  width: 320px;
-  height: 420px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.06) 0%,
-    rgba(255, 255, 255, 0.02) 100%
-  );
-  border-radius: 18px 18px 0 0;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
 }
 .imageSection {
   text-align: center;

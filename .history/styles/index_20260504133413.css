@@ -36,6 +36,7 @@ li {
 
 nav ul li a {
   text-decoration: none;
+  color: black;
   color: white;
 }
 
@@ -76,21 +77,6 @@ img {
   flex-direction: column;
   padding-top: 72px;
   background: var(--teal-grad);
-}
-
-.heroPlaceHolder {
-  width: 320px;
-  height: 420px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.06) 0%,
-    rgba(255, 255, 255, 0.02) 100%
-  );
-  border-radius: 18px 18px 0 0;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .imageSection {
   text-align: center;
