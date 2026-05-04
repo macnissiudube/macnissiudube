@@ -9,6 +9,12 @@ body {
   font-family: "Orbitron-VariableFont_wght";
 }
 
+/* GENERAL ********************************************/
+
+body {
+  background-color: #131338;
+}
+
 /* NAVIGATION ********************************************/
 
 /* big parent container */
@@ -68,14 +74,16 @@ img {
   width: max-content;
 }
 
+/* MAIN HERO SECTION **************************/
+
 .hero {
   margin: 0;
   min-height: 80vh;
   width: 100vw;
-  padding-bottom: 1 rem;
-  flex-direction: column;
+  padding-bottom: 1rem;
   padding-top: 72px;
-  background: var(--teal-grad);
+  display: flex;
+  justify-content: center;
 }
 
 .heroPlaceHolder {
@@ -91,7 +99,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #004c8017;
 }
+
+/* MYSTERY STUFF LOL *******/
+
 .imageSection {
   text-align: center;
   display: flex;
