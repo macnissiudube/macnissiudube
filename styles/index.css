@@ -1,3 +1,5 @@
+/* TODO - move the below typeface stuff to globals.css for reusability */
+
 @font-face {
   font-family: "Orbitron-VariableFont_wght";
   src: url(/assets/fonts/Orbitron/Orbitron-VariableFont_wght.ttf);
@@ -6,24 +8,34 @@
 body {
   font-family: "Orbitron-VariableFont_wght";
 }
-nav ul {
+
+/* NAVIGATION ********************************************/
+
+/* big parent container */
+nav {
   display: flex;
-  justify-content: flex-end;
-  height: 10vh;
-  align-items: flex-end;
-}
-.navmenu {
-  display: block;
-}
-header {
-  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
+/* smol child container */
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 li {
-  margin: 2rem;
+  margin: 1rem; /* enhance vibes */
   list-style: none;
 }
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* MAIN LAYOUT ********************************************/
 
 main {
   display: flex;
