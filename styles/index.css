@@ -85,6 +85,88 @@ footer ul li a {
   color: white;
 }
 
+/* PROJECT LAYOUT ******************************************/
+
+#projects > header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 56px;
+  align-items: end;
+}
+
+#projects > header p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+#projects ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+#projects li {
+  border-radius: 16px;
+  background: #131c24;
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 4 / 5;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#projects li:hover {
+  transform: translateY(-6px);
+}
+
+/* First card spans two columns and is taller */
+#projects li:first-child {
+  grid-column: span 2;
+  aspect-ratio: auto;
+  min-height: 340px;
+}
+/* Dark gradient overlay at the bottom of each card */
+#projects li::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, transparent 55%);
+}
+
+#projects article {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px;
+  z-index: -99;
+}
+
+#projects article small {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: whitesmoke;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+#projects article h3 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.projectsImage {
+  background-image: url(/assets/images/Coast\ -\ UE5\ Practice\,\ Soufiane\ Idrassi.jpg);
+}
+
 /* MAIN LAYOUT ********************************************/
 
 main {
