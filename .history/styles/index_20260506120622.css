@@ -1,0 +1,203 @@
+/* TODO - move the below typeface stuff to globals.css for reusability */
+
+@font-face {
+  font-family: "Orbitron-VariableFont_wght";
+  src: url(/assets/fonts/Orbitron/Orbitron-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: "Orbitron-VariableFont_wght";
+}
+
+/* GENERAL ********************************************/
+
+body {
+  background-color: white;
+}
+
+/* NAVIGATION ********************************************/
+
+/* big parent container */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: rgba(13, 17, 23, 0.85);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* smol child container */
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+li {
+  margin: 1rem; /* enhance vibes */
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* MAIN LAYOUT ********************************************/
+
+main {
+  display: flex;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex: row;
+}
+
+h2 {
+  justify-content: center;
+  text-align: center;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container {
+  display: grid;
+  width: max-content;
+}
+
+/* MAIN HERO SECTION **************************/
+
+.hero {
+  margin: 0;
+  min-height: 80vh;
+  width: 100vw;
+  padding-bottom: 1rem;
+  padding-top: 72px;
+  display: flex;
+  justify-content: center;
+}
+
+.heroPlaceHolder {
+  width: 320px;
+  height: 420px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.06) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  border-radius: 18px 18px 0 0;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #004c8017;
+}
+
+/* MYSTERY STUFF LOL *******/
+
+.imageSection {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainSection {
+  display: flex;
+  justify-content: space-between;
+  text-align: end;
+  align-items: flex-end;
+}
+.aboutSection {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutH2 {
+  display: flex;
+  justify-content: flex-start;
+  text-align: end;
+  align-items: flex-end;
+}
+.langSection div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    border-radius: 16px;
+    position: relative;
+    cursor: pointer;
+    transition: transform .3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+
+
+footer {
+    background: #0a0f15;
+    padding: 60px 40px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.footer-links {
+    display: flex;
+    gap: 28px;
+}
+
+.footer-links a{
+    font-size: 0.85rem;
+    text-decoration: none;
+    gap: 28px;
+    align-items: flex-end;
+}
+
+.footer-links a:hover {
+    color: beige;
+}
+
+.footer-copy {
+    color: #131338;
+    font-size: 0.78rem;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+

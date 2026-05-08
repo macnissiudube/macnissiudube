@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Orbitron-VariableFont_wght";
+  src: url(/assets/fonts/Orbitron/Orbitron-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: "Orbitron-VariableFont_wght";
+  background-image: url(/assets/images/download\ \(7\).jpg);
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  height: 10vh;
+  align-items: flex-end;
+}
+.navmenu {
+  display: block;
+}
+header {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  margin: 2rem;
+  list-style: none;
+}
+
+main {
+  display: flex;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex: row;
+}
+
+h2 {
+  justify-content: center;
+  text-align: center;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container {
+  display: grid;
+  width: max-content;
+}
+
+.headerSection {
+  margin: 0;
+  min-height: 80vh;
+  width: 100vw;
+  padding-bottom: 1 rem;
+  flex-direction: row;
+}
+.imageSection {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainSection {
+  display: flex;
+  justify-content: space-between;
+  text-align: end;
+  align-items: flex-end;
+}
+.aboutSection {
+  display: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.aboutH2 {
+  display: flex;
+  justify-content: flex-start;
+  text-align: end;
+  align-items: flex-end;
+}
+
+.aboutParagraph {
+  display: flex;
+  justify-content: flex-start;
+  text-align: end;
+  align-items: flex-end;
+}

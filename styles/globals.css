@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Orbitron-VariableFont_wght";
+  src: url(/assets/fonts/Orbitron/Orbitron-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: "Orbitron-VariableFont_wght";
+}
+
+/* GENERAL ********************************************/
+
+body {
+  background-color: white;
+}
+
+@media screen {
+    max-width: 480px; 
+}

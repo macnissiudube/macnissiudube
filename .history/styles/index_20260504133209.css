@@ -1,0 +1,106 @@
+/* TODO - move the below typeface stuff to globals.css for reusability */
+
+@font-face {
+  font-family: "Orbitron-VariableFont_wght";
+  src: url(/assets/fonts/Orbitron/Orbitron-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: "Orbitron-VariableFont_wght";
+}
+
+/* NAVIGATION ********************************************/
+
+/* big parent container */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* smol child container */
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 18px 40px;
+  background: rgba(13, 17, 23, 0.85);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+li {
+  margin: 1rem; /* enhance vibes */
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* MAIN LAYOUT ********************************************/
+
+main {
+  display: flex;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex: row;
+}
+
+h2 {
+  justify-content: center;
+  text-align: center;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container {
+  display: grid;
+  width: max-content;
+}
+
+.hero {
+  margin: 0;
+  min-height: 80vh;
+  width: 100vw;
+  padding-bottom: 1 rem;
+  flex-direction: column;
+  padding-top: 72px;
+  background: var(--teal-grad);
+}
+.imageSection {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainSection {
+  display: flex;
+  justify-content: space-between;
+  text-align: end;
+  align-items: flex-end;
+}
+.aboutSection {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutH2 {
+  display: flex;
+  justify-content: flex-start;
+  text-align: end;
+  align-items: flex-end;
+}
