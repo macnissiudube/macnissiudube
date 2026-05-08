@@ -224,6 +224,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  gap: 24px;
 }
 
 footer p {
@@ -231,6 +232,7 @@ footer p {
   font-size: 0.78rem;
   width: 100%;
   text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 /* MOBILE FIRST DESIGN */

@@ -221,16 +221,37 @@ footer {
   background: #0a0f15;
   padding: 0px 10px 0px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
+  gap: 24px;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
 }
 
-footer p {
+.footer-links nav a {
+  font-size: 0.85rem;
+  text-decoration: none;
+  gap: 28px;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.footer-links a:hover {
+  color: beige;
+}
+
+.footer-copy {
   color: #ffffff;
   font-size: 0.78rem;
   width: 100%;
   text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 /* MOBILE FIRST DESIGN */
