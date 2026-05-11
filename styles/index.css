@@ -87,15 +87,17 @@ footer ul li a {
 
 /* PROJECT LAYOUT ******************************************/
 
-#projects > header {
+#projects .projectHeader {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   margin-bottom: 56px;
   align-items: end;
+  position: relative;
+  z-index: -1;
 }
 
-#projects > header p {
+#projects .projectHeader p {
   color: #555;
   font-size: 0.95rem;
   line-height: 1.65;
@@ -106,6 +108,9 @@ footer ul li a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+
+  position: relative;
+  z-index: -1;
 }
 
 #projects li {
@@ -129,6 +134,7 @@ footer ul li a {
   aspect-ratio: auto;
   min-height: 340px;
 }
+
 /* Dark gradient overlay at the bottom of each card */
 #projects li::after {
   content: "";
