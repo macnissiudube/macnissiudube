@@ -115,6 +115,7 @@ li {
   background: #131c24;
   background-size: cover;
   background-position: center;
+  background-image: url(/assets/images/Screenshot\ 2026-05-12\ 103049.png);
   aspect-ratio: 4 / 5;
   position: relative;
   cursor: pointer;
@@ -130,15 +131,6 @@ li {
   grid-column: span 2;
   aspect-ratio: auto;
   min-height: 340px;
-  background-image: url(/assets/images/Screenshot\ 2026-05-12\ 103049.png);
-}
-
-#projects li:nth-child(2) {
-  background-image: url(/assets/images/Fitness\ Report.png);
-}
-
-#projects li:nth-child(3) {
-  background-image: url(/assets/images/Menu\ Selection.png);
 }
 
 /* Dark gradient overlay at the bottom of each card */

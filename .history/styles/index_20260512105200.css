@@ -133,12 +133,8 @@ li {
   background-image: url(/assets/images/Screenshot\ 2026-05-12\ 103049.png);
 }
 
-#projects li:nth-child(2) {
-  background-image: url(/assets/images/Fitness\ Report.png);
-}
-
-#projects li:nth-child(3) {
-  background-image: url(/assets/images/Menu\ Selection.png);
+#projects li:second-child {
+    
 }
 
 /* Dark gradient overlay at the bottom of each card */
