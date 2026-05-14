@@ -13,7 +13,9 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
+
 body {
   font-family: "Orbitron-VariableFont_wght";
 }
@@ -50,6 +52,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding-inline-start: 0;
 }
 
 .headerLogo,
@@ -104,7 +107,6 @@ li {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-
   position: relative;
   z-index: -1;
 }
