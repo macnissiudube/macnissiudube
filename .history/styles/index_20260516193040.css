@@ -150,7 +150,7 @@ li {
 }
 
 #projects .projectHeader p {
-  color: #ff5b22;
+  color: black;
   font-size: 0.95rem;
   line-height: 1.65;
 }
@@ -161,7 +161,7 @@ li {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   position: relative;
-  z-index: 1;
+  z-index: -1;
 }
 
 #projects li {
@@ -172,6 +172,7 @@ li {
   aspect-ratio: 4 / 5;
   position: relative;
   cursor: pointer;
+  transition: transform 0.3s ease;
   border-bottom-left-radius: 16px;
   overflow: hidden;
   transition:
@@ -180,15 +181,12 @@ li {
     border-color 0.3s ease;
 }
 
-#projects .projectImages {
+#projects li:hover {
+  transform: translateY(-10px);
   border-color: #ffffff;
   box-shadow:
     0 15px 30px rgba(0, 0, 0, 0.5),
     0 0 15px rgba(255, 255, 255, 0.1);
-}
-
-#projects li:hover {
-  transform: translateY(-10px);
 }
 
 /* First card spans two columns and is taller */
@@ -469,17 +467,6 @@ img {
   position: relative;
   cursor: pointer;
   transition: transform 0.3s ease;
-}
-
-#languages img:hover {
-  transform: translateY(-6px);
-}
-
-#languages img::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, transparent 55%);
 }
 
 /* Footer Layout */
