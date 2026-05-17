@@ -1,0 +1,580 @@
+/* TODO - move the below typeface stuff to globals.css for reusability */
+
+@font-face {
+  font-family: "Orbitron-VariableFont_wght";
+  src: url(/assets/fonts/Orbitron/Orbitron-VariableFont_wght.ttf);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Orbitron-VariableFont_wght";
+}
+
+/* GENERAL ********************************************/
+
+body {
+  background-color: white;
+}
+
+/* NAVIGATION ********************************************/
+
+#header {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+}
+/* big parent container */
+.headerNav,
+.footerNav {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5 rem;
+  background: #0a0f15;
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* smol child container */
+.headerNavList,
+.footerNavList {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-inline-start: 0;
+}
+
+.headerLogo,
+.footerLogo {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 10px;
+}
+
+li {
+  margin: 1rem; /* enhance vibes */
+  list-style: none;
+}
+
+.headerNavList li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.88rem;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.headerNavList li a:hover {
+  color: #ff5b22;
+  text-shadow:
+    0 0 8px #ff5b22,
+    0 0 20px #ff5b22;
+  transform: translateY(-2px);
+  opacity: 0.8;
+}
+
+.headerNavList li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.headerNavList li a::after {
+  content: "";
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff5b22;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.footerNavList li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.88rem;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.footerNavList li a:hover {
+  color: #ff5b22;
+  text-shadow:
+    0 0 8px #ff5b22,
+    0 0 20px #ff5b22;
+  transform: translateY(-2px);
+  opacity: 0.8;
+}
+
+.footerNavList li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.footerNavList li a::after {
+  content: "";
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff5b22;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+/* PROJECT LAYOUT ******************************************/
+
+#projects .projectHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 56px;
+  align-items: end;
+  position: relative;
+  z-index: -1;
+}
+
+#projects .projectHeader p {
+  color: black;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+#projects ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  position: relative;
+  z-index: -1;
+}
+
+.projectsImages {
+  border-radius: 16px;
+  background: #131c24;
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 4 / 5;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-bottom-left-radius: 16px;
+  overflow: hidden;
+  transition:
+    transform 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.projectsImages:hover {
+  transform: translateY(-10px);
+  border-color: #ffffff;
+  box-shadow:
+    0 15px 30px rgba(0, 0, 0, 0.5),
+    0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+/* First card spans two columns and is taller */
+#projects li:first-child {
+  grid-column: span 2;
+  aspect-ratio: auto;
+  min-height: 340px;
+  background-image: url(/assets/images/Screenshot\ 2026-05-12\ 103049.png);
+}
+
+#projects li:nth-child(2) {
+  background-image: url(/assets/images/Fitness\ Report.png);
+}
+
+#projects li:nth-child(3) {
+  background-image: url(/assets/images/Menu\ Selection.png);
+}
+
+/* Dark gradient overlay at the bottom of each card */
+#projects li::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, transparent 55%);
+}
+
+#projects article {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px;
+  z-index: 1;
+}
+
+#projects article small {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: whitesmoke;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+/* Contact and CTA Banner Layout */
+
+#contact {
+  margin: 0 40px 80px;
+  background: #0d1117;
+  border-radius: 20px;
+  padding: 70px 56px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle orange glow in top-right corner */
+#contact::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 91, 34, 0.15) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+/* Faint background photo */
+#contact::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(/assets/images/photo-1529665253569-6d01c0eaf7b6.jpg) center /
+    cover no-repeat;
+  opacity: 0.12;
+  border-radius: 20px;
+}
+
+/* Push text content above the pseudo-element background */
+#contact header,
+#contact form {
+  position: relative;
+  z-index: 2;
+}
+
+#contact header em {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 800;
+  color: #ff5b22;
+  line-height: 1.1;
+}
+
+#contact header h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 800;
+  color: white;
+  line-height: 1.1;
+}
+
+#contact form p {
+  font-size: 1.05rem;
+  color: rgba(245, 243, 239, 0.8);
+  line-height: 1.55;
+  margin-bottom: 28px;
+  font-weight: 300;
+}
+
+#contact form fieldset {
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#contact form input {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: white;
+  padding: 13px 18px;
+  border-radius: 100px;
+
+  font-size: 0.85rem;
+  outline: none;
+}
+
+#contact form input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+#contact form button {
+  background: #ff5b22;
+  color: #fff;
+  border: none;
+  padding: 13px 22px;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+
+#contact form button:hover {
+  opacity: 0.85;
+}
+
+/* MAIN LAYOUT ********************************************/
+
+main {
+  display: flex;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex: row;
+}
+
+h2 {
+  justify-content: center;
+  text-align: center;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container {
+  display: grid;
+  width: max-content;
+}
+
+/* MAIN HERO SECTION **************************/
+
+.hero {
+  margin: 0;
+  min-height: 80vh;
+  width: 100vw;
+  padding-bottom: 1rem;
+  padding-top: 72px;
+  display: flex;
+  justify-content: center;
+
+  background-color: #09203ae3;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heroPlaceHolder {
+  width: 320px;
+  height: 420px;
+  background: linear-gradient(
+    180deg,
+    rgba(9, 43, 70, 0.911) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  border-radius: 18px 18px 0 0;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #03304ee7;
+}
+
+/* MYSTERY STUFF LOL *******/
+
+.mainSection {
+  display: flex;
+  justify-content: space-between;
+  text-align: end;
+  align-items: flex-end;
+}
+.aboutSection {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutH2 {
+  display: flex;
+  justify-content: flex-start;
+  text-align: end;
+  align-items: flex-end;
+}
+
+.article p {
+  display: flex;
+  justify-content: flex-start;
+  text-align: end;
+  align-items: flex-end;
+}
+
+/* Languages Section Layout */
+
+.langSection {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+.langSection .card {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.langSection .card img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+#languages img {
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#languages img:hover {
+  transform: translateY(-6px);
+}
+
+#languages img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, transparent 55%);
+}
+
+/* Footer Layout */
+
+.footer {
+  background: #0a0f15;
+  padding: 0px 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footerCopy {
+  color: #ffffff;
+  font-size: 0.78rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* About Section Layout */
+#about {
+  padding: 100px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+#about header em {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 800;
+  color: #ff5b22;
+  line-height: 1.1;
+}
+
+#about h2 {
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+#about article p {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: #000000;
+  margin-bottom: 14px;
+}
+
+.article {
+  opacity: 10;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease;
+  transform: o.7s ease;
+}
+
+/* =============================================
+       RESPONSIVE — single column on small screens
+    ============================================= */
+
+@media (max-width: 820px) {
+  nav {
+    padding: 16px 20px;
+  }
+
+  #about,
+  #languages,
+  #projects {
+    grid-template-columns: 1fr;
+  }
+
+  #projects ul {
+    grid-template-columns: 1fr;
+  }
+
+  #projects li:first-child {
+    grid-column: span 1;
+  }
+  .projectSection {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    gap: 1rem;
+  }
+
+  .langSection {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  header {
+    width: auto;
+  }
+}
+/* DESKTOP DESIGN */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .projectSection {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* 5 cols */
+    grid-template-rows: 50vh; /* 1 row - ~1/2 the viewport */
+  }
+}
